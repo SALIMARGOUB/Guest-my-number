@@ -1,0 +1,135 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    }
+    /* Style du header */
+    header {
+    background-color: #1e272e;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    }
+    
+    header h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    }
+    
+    header p.between {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    }
+    
+    header .btn.again {
+    background-color: #fbc531;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 1rem 2rem;
+    margin-bottom: 1rem;
+    transition: all 0.3s ease;
+    }
+    
+    header .btn.again:hover {
+    background-color: #e1b12c;
+    }
+    
+    header .number {
+    background-color: #fff;
+    border-radius: 50%;
+    color: #1e272e;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 5rem;
+    height: 150px;
+    width: 150px;
+    margin-bottom: 2rem;
+    }
+    
+    /* Style du main */
+    main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+    background-color: #dfe6e9;
+    }
+    
+    .left {
+    flex: 1 1 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    }
+    
+    .left .guess {
+    font-size: 1.5rem;
+    padding: 1rem;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+    }
+    
+    .left .check {
+    background-color: #1e272e;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 1rem 2rem;
+    transition: all 0.3s ease;
+    }
+    
+    .left .check:hover {
+    background-color: #2f3640;
+    }
+    
+    .right {
+    flex: 1 1 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    }
+    
+    .right .message {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+    }
+    
+    .right .label-score,
+    .right .label-highscore {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    }
+    
+    .right .label-score span,
+    .right .label-highscore span {
+    font-weight: bold;
+    color: #1e272e;
+    }
+    
+    /* Media queries pour les écrans plus petits */
+    @media screen and (max-width: 768px) {
+    main {
+    flex-direction: column;
+    }
+    
+    .left, .right {
+    flex: 1 1 100%;
+    }
+    }
